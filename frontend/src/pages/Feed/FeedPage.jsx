@@ -6,6 +6,8 @@ import {CreatePostForm} from "../../components/CreatePostForm";
 import { Navbar } from "../../components/Navbar";
 import CommentsModal from "../../components/CommentsModal";
 import { SortPosts } from "../../components/SortPosts";
+import { Footer } from "../../components/Footer";
+
 
 
 export function FeedPage() {
@@ -90,10 +92,8 @@ export function FeedPage() {
         post={activePost}
         onClose={() => setActivePost(null)}
       />
-      <LogoutButton />
       <Footer/>
       </div>
 
-    </div>
   );
 }
